@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+
+
+    <div class="grid-container">
+        <div class="grid-item"><br> <br> <form>
+
+            <h2 id="medidas">Convesor de medidas </h2>
+   
+            <label> distância em Metros </label> <br>
+            <input type="number" id="distanciaMetro" >   <br>
+            <button type="button" onclick="cMCm()"> Centimetros</button>
+            <button type="button" onclick="cMJardas()"> Jardas</button>
+            <button type="button" onclick="cMMilimetro()"> Milimetros</button>
+            <button type="button" onclick="cMPes()"> Pés</button>
+            <button type="button" onclick="cMKm()">Quilometros</button>
+            <p id="c-Metros"> </p>
+                </form>
+            <form>
+              
+                <label> distância em pés-Pés</label> <br>
+                <input type="number" id="distanciaPes" >   <br>
+                <button type="button" onclick="cPCm()"> Centimetros</button>
+                <button type="button" onclick="cPJardas()"> Jardas</button>
+                <button type="button" onclick="cPMilimetro()"> Milimetros</button>
+                <button type="button" onclick="cPMetros()"> Metros</button>
+                <button type="button" onclick="cPKm()">Quilometros</button>
+                <p id="c-Pes"> </p>
+                </form>
+            <form>
+                    <label> distância em Centimetros </label> <br>
+                    <input type="number" id="distanciaCentimetros" >   <br>
+                    <button type="button" onclick="cCMetros()"> Metros</button>
+                    <button type="button" onclick="cCJardas()"> Jardas</button>
+                    <button type="button" onclick="cCMilimetros()"> Milimetros</button>
+                    <button type="button" onclick="cCPes()"> Pés</button>
+                    <button type="button" onclick="cCKm()">Quilometros</button>
+                    <p id="c-Cm"> </p>
+                </form>
+            <form>
+                        <label> distância em Jardas </label> <br>
+                        <input type="number" id="distanciaJardas" >   <br>
+                        <button type="button" onclick="cJCm()"> Centimetros</button>
+                        <button type="button" onclick="cJardaMetro()"> Metros</button>
+                        <button type="button" onclick="cJMilimetro()"> Milimetros</button>
+                        <button type="button" onclick="cJPes()"> Pés</button>
+                        <button type="button" onclick="cJKm()">Quilometros</button>
+                        <p id="c-Jardas"> </p>
+                </form>
+            <form>
+                         
+                            <label> distância em Milimetro</label> <br>
+                            <input type="number" id="distanciaMilimetro" >   <br>
+                            <button type="button" onclick="cMLcm()"> Centimetros</button>
+                            <button type="button" onclick="cMLjardas()"> Jardas</button>
+                            <button type="button" onclick="cMLmetro()"> Metros</button>
+                            <button type="button" onclick="cMLpes()"> Pés</button>
+                            <button type="button" onclick="cMLkm()">Quilometros</button>
+                            <p id="c-Milimetros"> </p>
+            </form>        
+            <form>
+                                <label> distância em Quilometro</label> <br>
+                                <input type="number" id="distanciaQuilometro" >   <br>
+                                <button type="button" onclick="cKCm()"> Centimetros</button>
+                                <button type="button" onclick="cKMilimetros()"> Milimetros</button>
+                                <button type="button" onclick="cKMetros()"> Metros</button>
+                                <button type="button" onclick="cKPes()"> Pés</button>
+                                <button type="button" onclick="cKJardas()">Jardas</button>
+                                <p id="c-Km"> </p>
+                </form></div>
+        <div class="grid-item"><br> <br> <form>
+   
+    <h2 id="valorConvertido"><strong>Conversor de moedas</strong></h2><br>
+           <label> digite o valor em Dolar </label><br>
+           <input type="number" id="moedaDolar">  <br>
+           <button type="button" onclick="cDEuro()"> Euro</button>
+           <button type="button" onclick="cDLibra()"> Libra</button>
+           <button type="button" onclick="cDReal()"> Real</button>
+           <button type="button" onclick="cDYuan()"> Yuan</button>
+           <p id="c-Dolar"> </p>
+                </form>
+            <form>
+           <h2 id="valorConvertido"></h2><br>
+           <label name=''> digite o valor em Euro </label><br>
+           <input type="number" id="moedaEuro">   <br>
+           <button type="button" onclick="cEDolar()"> Dolar</button>
+           <button type="button" onclick="cELibra()"> Libra</button>
+           <button type="button" onclick="cEReal()"> Real</button>
+           <button type="button" onclick="cEYuan()"> Yuan</button>
+           <p id="c-Euro"></p>
+                </form>
+            <form>
+        <h2 id="valorConvertido"></h2><br>
+        <label> digite o valor em Real </label><br>
+        <input type="number" id="moedaReal">   <br>
+        <button type="button" onclick="cRDolar()">Dolar</button>
+        <button type="button" onclick="cREuro()"> Euro</button>
+        <button type="button" onclick="cRLibra()"> Libra</button>
+        <button type="button" onclick="cRYuan()"> Yuan</button>
+        <p id="c-Real"></p>
+                </form>
+            <form>
+        <label> digite o valor em Libras </label><br>
+        <input type="number" id="moedaLibra">   <br>
+        <button type="button" onclick="cLDolar()"> Dolar</button>
+        <button type="button" onclick="cLEuro()"> Euro</button>
+        <button type="button" onclick="cLReal()"> Real</button>
+        <button type="button" onclick="cLYuan()"> Yuan</button>
+        <p id="c-Libra"> </p>
+                </form>
+            <form>
+        <label> digite o valor em Yuan </label><br>
+        <input type="number" id="moedaYuan" >   <br>
+        <button type="button" onclick="cYDolar()"> Dolar</button>
+        <button type="button" onclick="cYEuro()"> Euro</button>
+        <button type="button" onclick="cYLibra()"> Libra</button>
+        <button type="button" onclick="cYReal()"> Real</button>
+        <p id="c-Yuan"> </p>
+                </form></div>
+        <div class="grid-item"><br> <br><form>
+            <h2 id="temperaturas">Convesor de temepaturas</h2>
+            <label> Temperatura em Celsius</label> <br>
+            <input type="number" id="TemperaturaCelsius" >   <br>
+               <button type="button" onclick="cCKelvin()"> Kelvin</button>
+               <button type="button" onclick="cCFihre()"> Fahrenheit</button>
+                  <p id="c-Celsius"> </p>
+               </form>    
+           <form>
+           <label> distância em Fahrenheit</label> <br>
+           <input type="number" id="TemperaturaFahrenheit" >   <br>
+           <button type="button" onclick="cFCelsius()"> Celsius</button>
+           <button type="button" onclick="cFKelvin()"> Kelvin</button>
+            <p id="c-Fahrenheit"> </p>
+               </form>
+           <form>
+           <label> distância em Kelvin</label> <br>
+           <input type="number" id="TemperaturaKelvin" >   <br>
+           <button type="button" onclick="cKFihre()"> Fahrenheit</button>
+           <button type="button" onclick="cKCelsius()"> Celsius</button>
+           <p id="c-Kelvin"> </p>
+               </form>
+       </div>  
+       
+       <script src="script.js"></script>
+
+</body>
+</html>
+
+
